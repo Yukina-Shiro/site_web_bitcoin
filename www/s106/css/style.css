@@ -1,0 +1,154 @@
+/* Global styles - Styles généraux pour l'ensemble de la page */
+body {
+  font-family: Arial, sans-serif; /* Définit une police standard pour tout le site */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les espacements internes par défaut */
+  background-color: #f4f4f4; /* Couleur de fond gris clair */
+}
+
+/* Header - Style de l'en-tête */
+header {
+  background-color: #333; /* Couleur de fond sombre */
+  color: white; /* Texte en blanc */
+  padding: 1rem; /* Espacement interne */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Main - Conteneur principal */
+main {
+  padding: 2rem; /* Espacement interne */
+  background-color: white; /* Fond blanc */
+  margin: 1rem auto; /* Centrage avec marges verticales */
+  max-width: 900px; /* Largeur maximale */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Sections - Blocs de contenu */
+section {
+  margin-bottom: 2rem; /* Espace sous chaque section */
+  padding: 1rem; /* Espacement interne */
+  background-color: #f9f9f9; /* Fond gris très clair */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Titres principaux */
+h2 {
+  color: #333; /* Texte en gris foncé */
+  border-bottom: 2px solid #ff9900; /* Soulignement orange */
+  padding-bottom: 0.5rem; /* Espacement sous le texte */
+  margin-bottom: 1rem; /* Espace sous le titre */
+}
+
+/* Listes (générales) */
+ul,
+ol {
+  margin-left: 2rem; /* Décalage vers la droite */
+}
+
+/* Navigation - Liste de liens */
+nav ul {
+  list-style-type: none; /* Supprime les puces des listes */
+  padding: 0; /* Supprime les espacements internes */
+  display: flex; /* Aligne les éléments en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 20px; /* Espace entre les éléments de la liste */
+}
+
+/* Liens de la navigation */
+nav ul li a {
+  color: white; /* Texte en blanc */
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Effet au survol des liens */
+nav ul li a:hover {
+  color: #ff9900; /* Couleur orange survolée */
+}
+
+/* Navigation - Styles détaillés */
+nav ul {
+  list-style: none; /* Supprime les puces */
+  display: flex; /* Aligne les liens en ligne */
+  gap: 1rem; /* Espace entre chaque lien */
+  padding: 0; /* Supprime les marges internes */
+}
+
+nav ul li a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #333; /* Texte en gris foncé */
+  font-weight: bold; /* Texte en gras */
+  padding: 0.5rem 1rem; /* Espacement autour du texte */
+  transition: background-color 0.3s, color 0.3s; /* Animation fluide sur les changements */
+}
+
+nav ul li a:hover {
+  background-color: #ff9900; /* Fond orange au survol */
+  color: white; /* Texte blanc au survol */
+  border-radius: 4px; /* Coins légèrement arrondis */
+}
+
+/* Footer - Pied de page */
+footer {
+  text-align: center; /* Centre le texte */
+  background-color: #333; /* Fond sombre */
+  color: white; /* Texte en blanc */
+  padding: 1rem; /* Espacement interne */
+  position: fixed; /* Fixe le footer en bas de la page */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  bottom: 0; /* Place le footer en bas de la fenêtre */
+}
+
+/* Conteneur pour l'image et la légende */
+figure.logo {
+  float: right; /* Positionne le logo à droite de la liste */
+  margin: 0 0 1rem 1rem; /* Espacement à gauche et en bas pour éviter le chevauchement */
+  text-align: center; /* Centre la légende par rapport à l'image */
+  max-width: 150px; /* Limite la taille du logo */
+}
+
+/* Style pour le logo */
+.logo-bitcoin {
+  width: 100%; /* Adapte la taille de l'image au conteneur */
+  height: auto; /* Maintient les proportions */
+  display: block; /* Assure un espacement correct avec la légende */
+}
+
+/* Style pour la légende de l'image */
+figcaption {
+  font-style: italic; /* Italique pour la légende */
+  font-size: 0.9em; /* Taille de police un peu plus petite */
+  color: #555; /* Couleur de texte pour la légende */
+  margin-top: 5px; /* Espacement entre l'image et la légende */
+}
+
+/* Responsive : empile le logo sous la liste sur petits écrans */
+@media (max-width: 600px) {
+  figure.logo {
+    float: none; /* Annule le flottement */
+    margin: 1rem auto; /* Centre le logo sous la liste */
+    text-align: center; /* Aligne la légende au centre */
+  }
+}
+
+/* Style pour le tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+th {
+  background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

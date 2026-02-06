@@ -1,0 +1,48 @@
+/* Sections */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ff9900;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Listes */
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+/* Liens de navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ff9900;
+  color: white;
+  border-radius: 4px;
+}
